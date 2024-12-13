@@ -13,3 +13,9 @@ jobs:
         steps:
             - name: Saludar
               run: echo "Hola Mundo"
+            - name: Check files
+              uses: ls
+            - name: Check out the repository
+              uses: actions/checkout@v4
+            - name: Check files
+              uses: ls
