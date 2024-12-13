@@ -1,0 +1,15 @@
+name: Mi Primer Workflow
+
+on:
+    push:
+        branches:
+            - master
+    workflow_dispatch:
+
+
+jobs:
+    saludar:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Saludar
+              run: echo "Hola Mundo"
